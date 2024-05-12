@@ -1,0 +1,45 @@
+Ejercicio uno al trabajo practico 3 de arquitectura.
+
+Primer testeo de codigo:
+
+Inicio tarea 1
+Fin tarea 1
+Tomó  5.09646 segundos completar la tarea 1
+Inicio tarea 2
+Fin tarea 2
+Tomó  1.00155 segundos completar la tarea 2
+Inicio tarea 3
+Fin tarea 3
+Tomó  4.00696 segundos completar la tarea 3
+Tomó un total de 10.10587 segundos completar todas las tareas
+
+Segundo testeo:
+
+Inicio tarea 1
+Fin tarea 1
+Tomó  5.20501 segundos completar la tarea 1
+Inicio tarea 2
+Fin tarea 2
+Tomó  1.00680 segundos completar la tarea 2
+Inicio tarea 3
+Fin tarea 3
+Tomó  4.00204 segundos completar la tarea 3
+Tomó un total de 10.21422 segundos completar todas las tareas
+
+Tercer y ultimo testeo:
+
+Inicio tarea 1
+Fin tarea 1
+Tomó  4.73267 segundos completar la tarea 1
+Inicio tarea 2
+Fin tarea 2
+Tomó  1.00021 segundos completar la tarea 2
+Inicio tarea 3
+Fin tarea 3
+Tomó  4.00056 segundos completar la tarea 3
+Tomó un total de 9.73363 segundos completar todas las tareas
+
+Por lo que se ve, el tiempo de ejecucion se hizo en orden, arrancando y terminando cada una de las tareas con un tiempo impredecible de segundos y milisegundos dados, que hacen el funcionamiento de la carga que llevaba el procesamiento de la maquina en el momento
+
+algunos de los procesos/funciones que se pueden categorizar de "maxima velocidad posible" son:
+-
