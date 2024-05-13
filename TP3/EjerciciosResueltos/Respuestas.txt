@@ -129,6 +129,76 @@ de esta manera se puede notar si estas descargando un archivo muy pesado o acomp
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-Ejercicio Condicion de Carrera (Race Condition)
+Ejercicio Sumador-Restador
 
+Primer prueba de codigo:
+
+El valor calculado final es: 0
+
+Segunda prueba:
+
+El valor calculado final es: 0
+
+Tercer testeo:
+
+El valor calculado final es: 0
+
+Cuarto y ultimo:
+
+El valor calculado final es: 0
+
+"Podemos ver que dicho código utilizará una variable acumulador, la función sumador() incrementará dicha variable en 5 unidades un mil veces, y la función restador() decrementará en 5 unidades la misma variable la misma cantidad de veces, lo que da un resultado neto igual a cero al final de la ejecución del programa."
+
+Ejercicio Condicion de Carrera (Race Condition)	Sumador-Restador
+
+Primer prueba de codigo:
+
+El valor calculado final es: 0
+Tomó un total de  0.02750 segundos completar las tareas.
+
+Segunda prueba:
+
+El valor calculado final es: 0
+Tomó un total de  0.39428 segundos completar las tareas.
+
+Tercer testeo:
+
+El valor calculado final es: 0
+Tomó un total de  0.38590 segundos completar las tareas.
+
+Cuarto y ultimo:
+
+El valor calculado final es: 0
+Tomó un total de  0.37432 segundos completar las tareas.
+
+Es un tiempo adecuado centrandose en que los hilos trabajan en ver cuales de las funciones tanto la de sumador como la de restador pueden hacer mas rapido
+
+Al final lo que sucede es que la funciones y los hilos suman y restan de maneras iguales por lo que termina dando resultado del acumulador 0
+Tambien es por que cuando un hilo arranca y termina y lo mismo con el otro lo que sucede es que se actualizan las variables como lo es acumulador por lo tanto nunca terminan de fijarle un valor concreto dando asi acumulador 0
+
+lo que se podria corregir sería la manera en la que se los hace trabajar a los hilos haciendo que se enfoquen solamente en una de las funciones sumar y restar y luego comparar los trabajos que hizo cada uno dando un resultado los trabajos que hizo cada uno dando un resultado.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Ejercicio Sumador-Restador Ultimo-ejercicio
+
+Primer codigo:
+
+El valor calculado final es: 5000
+
+Segundo Codigo:
+
+El valor calculado final es: -4825
+
+Tercer Codigo:
+
+El valor calculado final es: -4990
+
+Cuarto Codigo:
+
+El valor calculado final es: 5000
+
+Es notable el valor final del acumulador, siendo asi una variacion de numeros entre 5000 y posiblemente -5000
+
+el tiempo de ejecucion puede variar entre los tiempos de los hilos por el ultimo que le asigne el valor a la variable acumulador siendo asi por lo que se muestra un numero negativo/restando o un numero positivo/sumando.
 

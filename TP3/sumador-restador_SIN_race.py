@@ -1,9 +1,7 @@
 import time
 import threading
 
-
 acumulador = 0
-
 
 def sumador(proteccion):
     global acumulador
@@ -18,7 +16,6 @@ def sumador(proteccion):
 
             acumulador = tmp
 
-
 def restador(proteccion):
     global acumulador
 
@@ -32,9 +29,7 @@ def restador(proteccion):
 
             acumulador = tmp
 
-
 proteccion = threading.Lock()
-
 
 hilo1 = threading.Thread(target=sumador, args=(proteccion,))
 hilo2 = threading.Thread(target=restador, args=(proteccion,))
@@ -44,6 +39,5 @@ hilo2.start()
 
 hilo1.join()
 hilo2.join()
-
 
 print(f'El valor calculado final es: {acumulador}')

@@ -1,9 +1,7 @@
 import time
 import threading
 
-
 acumulador = 0
-
 
 def sumador():
     global acumulador
@@ -17,7 +15,6 @@ def sumador():
 
         acumulador = tmp
 
-
 def restador():
     global acumulador
 
@@ -30,7 +27,6 @@ def restador():
 
         acumulador = tmp
 
-
 hilo1 = threading.Thread(target=sumador)
 hilo2 = threading.Thread(target=restador)
 
@@ -39,6 +35,5 @@ hilo2.start()
 
 hilo1.join()
 hilo2.join()
-
 
 print(f'El valor calculado final es: {acumulador}')
