@@ -1,0 +1,3 @@
+[submodule "Docker-NGINX-PHP-MySQL-PhpMyadmin"]
+	path = Docker-NGINX-PHP-MySQL-PhpMyadmin
+	url = https://github.com/rzrokon/Docker-NGINX-PHP-MySQL-PhpMyadmin.git
